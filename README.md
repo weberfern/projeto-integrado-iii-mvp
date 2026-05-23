@@ -7,7 +7,13 @@ Professor: Prof. Allysson Allex Araújo
 
 ---
 
-## Equipe
+## 🔗 Continuidade do Projeto
+
+Este repositório é a continuidade do projeto de referência desenvolvido no repositório [projeto-integrado-ii-wireframe-sitemap](https://github.com/weberfern/projeto-integrado-ii-wireframe-sitemap). Aqui, o trabalho evolui do wireframe e do sitemap para o protótipo de alta fidelidade do MVP, mantendo a mesma base conceitual e ampliando a documentação visual.
+
+---
+
+## 👥 Equipe
 
 | Nome | Matrícula |
 | --- | --- |
@@ -20,13 +26,13 @@ Professor: Prof. Allysson Allex Araújo
 
 ---
 
-## Visão Geral
+## 🌐 Visão Geral
 
 O projeto Feira Conectada tem como proposta apoiar a organização, divulgação e acesso às informações de uma feira conectada em ambiente web. Este entregável parcial apresenta o protótipo de alta fidelidade do MVP, desenvolvido no Figma, com foco nas principais telas e fluxos da aplicação.
 
 ---
 
-## Problema que a solução resolve
+## 🧩 Problema que a solução resolve
 
 Feiras e iniciativas semelhantes costumam depender de processos pouco centralizados para organizar informações, apresentar conteúdo ao público e facilitar a navegação entre as principais áreas do sistema. Isso pode gerar confusão, demora no acesso às informações e uma experiência pouco consistente para os usuários.
 
@@ -34,7 +40,7 @@ O Feira Conectada busca reduzir esse problema com uma interface clara, organizad
 
 ---
 
-## Objetivo do Sistema
+## 🎯 Objetivo do Sistema
 
 O objetivo do sistema é oferecer uma experiência web simples e intuitiva para apresentar o projeto da feira, apoiar a navegação entre suas principais funcionalidades e servir como base para a evolução incremental do MVP.
 
@@ -42,7 +48,7 @@ Neste EP1, o foco está na construção do protótipo de alta fidelidade, valida
 
 ---
 
-## Como o Sistema Funciona
+## ⚙️ Como o Sistema Funciona
 
 Em visão geral, o sistema organiza a apresentação da solução em blocos de informação e em telas com fluxo coerente de navegação. O usuário deve conseguir:
 
@@ -55,7 +61,7 @@ O protótipo foi pensado para demonstrar esse fluxo de forma fiel ao produto des
 
 ---
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 Para o EP1, as tecnologias e recursos utilizados foram:
 
@@ -66,48 +72,90 @@ Para o EP1, as tecnologias e recursos utilizados foram:
 
 ---
 
-## Como Executar ou Utilizar a Aplicação
+## ▶️ Como Executar ou Utilizar a Aplicação
 
-Este entregável é um protótipo no Figma, portanto não há execução local como em uma aplicação já implementada.
+Este entregável é um protótipo no Figma, portanto será por meio da navegação do protótipo.
 
 Para utilizar o material:
 
 1. Acesse o link do Figma na seção correspondente abaixo.
 2. Navegue pelas telas do protótipo.
 3. Observe os fluxos principais, a organização dos componentes e as decisões visuais.
-4. Consulte as imagens incluídas neste README para referência rápida das telas.
+4. Se necessário, consulte as imagens incluídas neste README para referência rápida das telas.
 
 ---
 
-## Link do Figma
+## 🔗 Link do Figma
 
-> Inserir aqui o link final do protótipo publicado no Figma.
-
-[Acessar o protótipo no Figma](https://www.figma.com/)
+[Acessar o protótipo no Figma](https://www.figma.com/proto/Y6Gp707VJ8QontEII1u2kv/Projeto-Integrado-III---Sprint-1---Feira-Conectada?node-id=2045-47&t=4iMK7GwI5DYnqT3e-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2145%3A148)
 
 ---
 
-## Protótipo de Alta Fidelidade
+## 🖼️ Protótipo de Alta Fidelidade
 
-As imagens abaixo serão atualizadas conforme você adicionar os arquivos na pasta images.
+O MVP foi dividido em duas experiências principais: telas para visitantes, sem login ou cadastro, e telas para usuário logado, com acesso à área administrativa. As interfaces mudam de acordo com o perfil de uso, mas mantêm consistência visual, hierarquia clara e identidade do projeto.
 
-### Tela inicial
+### 👤 Telas para visitantes (usuário não cadastrados/logados)
 
-![Tela inicial](./images/tela-inicial.png)
+#### Tela inicial
 
-### Fluxo principal
+Mostra a primeira impressão do sistema, com apresentação da proposta da Feira Conectada, destaque para feiras, produtos e produtores, e acesso rápido às principais áreas públicas.
 
-![Fluxo principal](./images/fluxo-principal.png)
+![Tela inicial](./images/tela-inicial-para-visitantes.png)
 
-### Outras telas do MVP
+#### Login e cadastro
 
-![Tela de detalhes](./images/tela-detalhes.png)
+Apresenta as telas de autenticação, permitindo que o visitante entre na plataforma ou crie uma nova conta para acessar a área logada.
 
-![Tela complementar](./images/tela-complementar.png)
+![Login e cadastro](./images/login-cadastro.png)
+
+#### Feiras 
+
+Exibe o catálogo de feiras com busca, filtros e cards informativos para facilitar a descoberta de opções próximas.
+
+![Feiras](./images/feiras-para-visitantes.png)
+
+#### Mapa de feiras 
+
+Apresenta as feiras em um mapa com pontos de referência e lista lateral, reforçando a navegação por localização.
+
+![Mapa de feiras](./images/mapa-feiras-para-visitantes.png)
+
+#### Produtores 
+
+Mostra produtores em destaque e um diretório com cards, reforçando a conexão entre origem dos produtos e a feira.
+
+![Produtores](./images/produtores-para-visitantes.png)
+
+#### Produtos 
+
+Organiza o catálogo de produtos com categorias, vitrines e paginação, permitindo explorar os itens de forma visual e direta.
+
+![Produtos](./images/produtos-para-visitantes.png)
+
+### 🔒 Telas para usuário logado
+
+#### Dashboard administrativo
+
+Concentra os indicadores estratégicos do sistema, com gráficos, cards e informações de gestão para apoiar decisões administrativas.
+
+![Dashboard administrativo](./images/dashboard.png)
+
+#### Gerenciar feiras
+
+Permite cadastrar uma nova feira por meio de formulário com campos estruturados para organizar dados essenciais da operação.
+
+![Gerenciar feiras](./images/gerenciar-feiras.png)
+
+#### Gerenciar produtos
+
+Permite cadastrar e manter produtos, além de listar os itens já registrados com ações de edição e remoção.
+
+![Gerenciar produtos](./images/gerenciar-produtos.png)
 
 ---
 
-## Decisões Tomadas ao Longo do Desenvolvimento
+## 🧭 Decisões Tomadas ao Longo do Desenvolvimento
 
 Algumas decisões importantes orientaram a construção do protótipo:
 
@@ -121,7 +169,7 @@ Essas decisões ajudam a transformar o protótipo em uma representação mais pr
 
 ---
 
-## Importância da Experiência do Usuário (UX)
+## 💡 Importância da Experiência do Usuário (UX)
 
 Um bom design de interface impacta diretamente a forma como as pessoas entendem, usam e confiam em um sistema. Quando uma aplicação é clara, visualmente organizada e fácil de navegar, o usuário encontra o que precisa com menos esforço, comete menos erros e se sente mais seguro para continuar usando a plataforma.
 
@@ -130,31 +178,3 @@ Na prática, isso faz diferença porque sistemas bem projetados tendem a ser mai
 No Feira Conectada, a preocupação com UX orientou escolhas como organização visual, legibilidade, padronização dos elementos e clareza nos fluxos. O objetivo é que a interface seja compreendida com rapidez e que o protótipo já transmita uma sensação de produto maduro e confiável.
 
 ---
-
-## Organização do Protótipo
-
-O protótipo de alta fidelidade contempla as principais telas e fluxos necessários para demonstrar o MVP. A documentação será expandida à medida que novas imagens forem adicionadas.
-
-Seções previstas para crescimento do README:
-
-- visão geral do sistema;
-- telas do fluxo principal;
-- detalhes de funcionalidades específicas;
-- ajustes visuais e justificativas de design;
-- evolução do protótipo ao longo das entregas.
-
----
-
-## Próximos Passos
-
-- adicionar as imagens finais na pasta images;
-- substituir os links e nomes das telas conforme o protótipo evoluir;
-- detalhar novas funcionalidades e fluxos;
-- atualizar o link oficial do Figma;
-- registrar mudanças importantes de design e usabilidade.
-
----
-
-## Observação
-
-Este README foi estruturado para atender aos requisitos do Entregável Parcial 1, deixando o projeto pronto para documentação contínua durante a evolução do MVP.
