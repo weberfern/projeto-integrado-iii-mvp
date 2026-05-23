@@ -1,9 +1,9 @@
-# Projeto Integrado III - Feira Conectada
+# 🎯 Projeto Integrado III - Feira Conectada
 
 Universidade Federal do Cariri (UFCA)  
 Análise e Desenvolvimento de Sistemas (ADS)  
-Disciplina: Projeto Integrado III [ADS0013]  
-Professor: Prof. Allysson Allex Araújo
+Disciplina: Projeto Integrado III [ADS0038]  
+Professor: Prof. Luís Fabrício de Freitas Souza
 
 ---
 
