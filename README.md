@@ -183,6 +183,6 @@ No Feira Conectada, a preocupação com UX orientou escolhas como organização 
 
 Na prática, o Feira Conectada poderia ajudar uma associação de produtores, uma feira comunitária ou até um pequeno negócio local que precise divulgar seus produtos e organizar informações em um único ambiente digital. Com uma interface clara, pessoas que nunca tiveram contato com o sistema poderiam encontrar feiras, visualizar produtos, localizar produtores e acessar informações importantes com mais facilidade.
 
-Para um negócio real, isso significaria ganhar mais visibilidade, reduzir dúvidas frequentes dos usuários e facilitar o contato entre quem vende e quem compra. Já para o público visitante, a solução poderia tornar a experiência de buscar produtos locais mais simples, rápida e confiável. Mesmo sendo um MVP, o projeto mostra como a tecnologia pode apoiar iniciativas do dia a dia e aproximar serviços digitais de problemas concretos.
+Para um negócio real, isso significaria ganhar mais visibilidade, reduzir dúvidas frequentes dos usuários e facilitar o contato entre quem vende e quem compra. Já para o público visitante, a solução poderia tornar a experiência de buscar produtos locais mais simples, rápida e confiável. Mesmo sendo um MVP, o projeto mostra como a tecnologia pode apoiar iniciativas do dia a dia e aproximar serviços digitais de problemas concretos e incentivar a valorização do comércio local.
 
 ---
