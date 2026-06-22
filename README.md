@@ -183,6 +183,13 @@ No Feira Conectada, a preocupação com UX orientou escolhas como organização 
 
 Na prática, o Feira Conectada poderia ajudar uma associação de produtores, uma feira comunitária ou até um pequeno negócio local que precise divulgar seus produtos e organizar informações em um único ambiente digital. Com uma interface clara, pessoas que nunca tiveram contato com o sistema poderiam encontrar feiras, visualizar produtos, localizar produtores e acessar informações importantes com mais facilidade.
 
-Para um negócio real, isso significaria ganhar mais visibilidade, reduzir dúvidas frequentes dos usuários e facilitar o contato entre quem vende e quem compra. Já para o público visitante, a solução poderia tornar a experiência de buscar produtos locais mais simples, rápida e confiável. Mesmo sendo um MVP, o projeto mostra como a tecnologia pode apoiar iniciativas do dia a dia e aproximar serviços digitais de problemas concretos e incentivar a valorização do comércio local.
+Para um negócio real, isso significaria ganhar mais visibilidade, reduzir dúvidas frequentes dos usuários e facilitar o contato entre quem vende e quem compra. Já para o público visitante, a solução poderia tornar a experiência de buscar produtos locais mais simples, rápida e confiável. Mesmo sendo um MVP, o projeto mostra como a tecnologia pode apoiar iniciativas do dia a dia e aproximar serviços digitais de problemas concretos.
+
+---
+
+## ⚙️ O que é Arquitetura de Software?
+
+A arquitetura de software é a estrutura fundamental de um sistema. Ela não se resume apenas a escrever código, mas a tomar decisões estratégicas sobre como os diferentes componentes da aplicação vão se organizar, comunicar e funcionar em conjunto. É como a planta baixa de uma casa: antes de construir as paredes, precisamos definir onde passarão os canos e os fios para que tudo suporte o uso diário.
+Sua importância no desenvolvimento de sistemas é vital. Uma boa arquitetura impacta a escalabilidade, permitindo que o projeto "Feira Conectada" suporte um aumento repentino de usuários sem sair do ar. Ela fortalece a segurança, blindando dados sensíveis de produtores e consumidores. Melhora o desempenho, garantindo que as buscas por produtos sejam rápidas. Facilita a manutenção e evolução, pois um código bem estruturado em módulos permite que a equipe adicione novas funcionalidades (como um chat entre produtor e cliente) sem quebrar o que já existe. Em suma, a arquitetura é o pilar que define a qualidade, a vida útil e o sucesso de um projeto de software no mundo real.
 
 ---
