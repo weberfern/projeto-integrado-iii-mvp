@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+  --color-feira-green: #0F4C36;
+  --color-feira-light: #E8F5E9;
+  --color-feira-gray: #F9FAFB;
+}
