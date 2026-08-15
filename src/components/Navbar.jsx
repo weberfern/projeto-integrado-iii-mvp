@@ -18,10 +18,10 @@ export default function Navbar() {
 
             <div className="flex items-center gap-6">
                 <div className="flex items-center gap-4 text-gray-700">
-                    <button className="hover:text-feira-green transition-colors">
+                    <button className="hover:text-feira-green transition-colors cursor-pointer">
                         <ShoppingBasket className="w-6 h-6" />
                     </button>
-                    <button className="hover:text-feira-green transition-colors">
+                    <button className="hover:text-feira-green transition-colors cursor-pointer">
                         <CircleUser className="w-6 h-6" />
                     </button>
                 </div>
