@@ -307,3 +307,44 @@ npm run dev
 - Dentro do Login, basta clicar no botão de "Acessar" (mesmo com os campos vazios) para ser redirecionado e testar a estrutura do **Dashboard**.
 
 ---
+
+## e) Processo de desenvolvimento
+
+A organização da equipe durante a construção do MVP funcional seguiu práticas ágeis e colaborativas:
+
+**1. Divisão de Tarefas:**
+As demandas foram divididas com base nos módulos principais da aplicação:
+- Estruturação do ecossistema React, roteamento e layouts base.
+- Implementação da interface pública (Home para visitantes).
+- Implementação da camada de Autenticação (Login).
+- Construção do Dashboard Administrativo e seus subcomponentes visuais.
+
+**2. Uso do GitHub e Estratégia de Versionamento:**
+O repositório foi utilizado como a fonte única da verdade para o código-fonte. Adotou-se uma abordagem baseada na branch `main` para manter as entregas centralizadas, com o versionamento marcando claramente a evolução através dos commits (do EP1 passando pelo EP2 até chegar a entrega do EP3).
+
+**3. Dificuldades Encontradas:**
+- Adaptar as métricas e alinhamentos exatos do protótipo de alta fidelidade (Figma) em componentes funcionais mantendo o design idêntico.
+- Configurar o roteamento no React para alternar corretamente entre a experiência de usuário visitante e o usuário logado (Dashboard), evitando vazamento de componentes globais que não deveriam aparecer na área logada.
+
+**4. Soluções Adotadas:**
+- A adoção do **Tailwind CSS v4** acelerou drasticamente a estilização, substituindo folhas de estilo complexas por utilitários diretamente no JSX.
+- Centralização dos ícones através da biblioteca **Lucide React** manteve o padrão estético do Figma de forma leve e rápida de implementar.
+- O uso da arquitetura de **Layouts Aninhados** (ex: `MainLayout`) no React Router resolveu a dificuldade de compartilhamento de elementos globais (como Navbar e Footer) somente entre as telas públicas.
+
+---
+
+**5. Capturas de Tela (Aplicação Desenvolvida)**
+
+Abaixo estão as capturas de tela das páginas já desenvolvidas e integradas em código nesta fase funcional:
+
+**Versão Desktop:**
+![Home Desktop](./images/feira-conectada-1.png)
+![Login Desktop](./images/feira-conectada-2.png)
+![Dashboard Desktop](./images/feira-conectada-3.png)
+
+**Versão Mobile:**
+![Home Mobile](./images/feira-conectada-1-mobile.png)
+![Login Mobile](./images/feira-conectada-2-mobile.png)
+![Dashboard Mobile](./images/feira-conectada-3-mobile.png)
+
+---
