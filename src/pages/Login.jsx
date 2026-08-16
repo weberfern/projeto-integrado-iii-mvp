@@ -12,15 +12,15 @@ export default function Login() {
     };
 
     return (
-        <div className="relative flex flex-col justify-center items-center flex-1 bg-[#FAFAFA] py-16 px-4 overflow-hidden min-h-[calc(100vh-140px)]">
+        <div className="relative flex flex-col justify-center items-center flex-1 w-full bg-[#F5F7F5] py-16 px-4 overflow-hidden min-h-[calc(100vh-140px)]">
             {/* Background Glows */}
-            <div className="absolute top-1/4 -left-20 w-96 h-96 bg-[#D1EEDC] rounded-full mix-blend-multiply filter blur-[100px] opacity-60 z-0"></div>
-            <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-[#D1EEDC] rounded-full mix-blend-multiply filter blur-[100px] opacity-60 z-0"></div>
+            <div className="absolute top-1/3 -left-48 w-[600px] h-[600px] bg-[#D1EEDC] rounded-full mix-blend-multiply filter blur-[120px] opacity-50 z-0"></div>
+            <div className="absolute bottom-1/4 -right-48 w-[600px] h-[600px] bg-[#D1EEDC] rounded-full mix-blend-multiply filter blur-[120px] opacity-40 z-0"></div>
 
             {/* Main Card */}
             <div className="relative z-10 bg-white p-10 sm:p-12 rounded-2xl shadow-[0_2px_20px_-5px_rgba(0,0,0,0.05)] border border-gray-100 w-full max-w-[440px]">
                 <div className="text-center mb-8">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-3">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-3 px-4">
                         {isLogin ? 'Entrar na Feira Conectada' : 'Criar sua conta'}
                     </h2>
                     <p className="text-gray-500 text-sm">
@@ -80,7 +80,8 @@ export default function Login() {
                     </button>
                 </form>
 
-                <div className="mt-10 text-center">
+                <div className="mt-8 text-center">
+                    <hr className="border-gray-100 mb-8 w-4/5 mx-auto" />
                     <p className="text-sm text-gray-500">
                         {isLogin ? 'Não tem uma conta?' : 'Já tem uma conta?'}{' '}
                         <button 
