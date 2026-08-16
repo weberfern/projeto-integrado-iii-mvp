@@ -35,62 +35,65 @@ export default function Home() {
             </section>
 
             {/* Nossas Feiras */}
-            <section className="w-full max-w-6xl mx-auto py-16 px-6 md:px-12">
-                <div className="flex justify-between items-end mb-8">
-                    <div>
-                        <h2 className="text-2xl font-bold text-gray-900 mb-2">Nossas Feiras</h2>
-                        <p className="text-gray-600">Explore os mercados mais próximos de você.</p>
-                    </div>
-                    <Link to="/feiras" onClick={(e) => e.preventDefault()} className="text-feira-green text-sm font-medium hover:underline hidden sm:flex items-center gap-1">
-                        Ver todas as feiras <ArrowRight className="w-4 h-4" />
-                    </Link>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[400px]">
-                    {/* Grande (Esquerda) */}
-                    <div className="md:col-span-2 relative rounded-xl overflow-hidden group cursor-pointer h-[300px] md:h-full">
-                        <img 
-                            src="https://images.unsplash.com/photo-1518977672816-c2814ea51408?auto=format&fit=crop&w=800&q=80" 
-                            alt="Feira da Glória" 
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-                        <div className="absolute bottom-0 left-0 p-6 md:p-8 w-full">
-                            <span className="bg-[#B9E3A5] text-[#0F3524] text-xs font-bold px-2 py-1 rounded mb-3 inline-block">DESTAQUE</span>
-                            <h3 className="text-white text-2xl font-bold mb-1">Feira da Glória</h3>
-                            <p className="text-gray-200 text-sm mb-4">Tradição e frescor no coração da cidade.</p>
-                            <button className="bg-[#0F3524] text-white px-6 py-2 rounded text-sm font-medium hover:bg-green-950 transition-colors shadow-sm">
-                                Ver
-                            </button>
+            <section className="w-full relative pt-16 pb-8">
+                <div className="absolute top-0 left-0 w-full h-[65%] bg-[#EAF0EC] z-0"></div>
+                <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12">
+                    <div className="flex justify-between items-end mb-8">
+                        <div>
+                            <h2 className="text-2xl font-bold text-[#0F3524] mb-2">Nossas Feiras</h2>
+                            <p className="text-gray-600">Explore os mercados mais próximos de você.</p>
                         </div>
+                        <Link to="/feiras" onClick={(e) => e.preventDefault()} className="text-feira-green text-sm font-medium hover:underline hidden sm:flex items-center gap-1">
+                            Ver todas as feiras <ArrowRight className="w-4 h-4" />
+                        </Link>
                     </div>
 
-                    {/* Menores (Direita) */}
-                    <div className="flex flex-col gap-6 h-[400px] md:h-full">
-                        {/* Top */}
-                        <div className="relative rounded-xl overflow-hidden group cursor-pointer flex-1">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[400px]">
+                        {/* Grande (Esquerda) */}
+                        <div className="md:col-span-2 relative rounded-xl overflow-hidden group cursor-pointer h-[300px] md:h-full shadow-md">
                             <img 
-                                src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=600&q=80" 
-                                alt="Mercado Central" 
+                                src="https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&w=800&q=80" 
+                                alt="Feira da Glória" 
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                            <div className="absolute bottom-0 left-0 p-5">
-                                <h3 className="text-white font-bold mb-1">Mercado Central</h3>
-                                <p className="text-gray-300 text-xs">Orgânicos Certificados</p>
+                            <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-white/95 via-white/80 to-transparent"></div>
+                            <div className="absolute bottom-0 left-0 p-6 md:p-8 w-full">
+                                <span className="bg-[#96D994] text-[#0F3524] text-xs font-bold px-3 py-1 rounded mb-3 inline-block">DESTAQUE</span>
+                                <h3 className="text-gray-900 text-2xl font-bold mb-1">Feira da Glória</h3>
+                                <p className="text-gray-700 text-sm mb-4">Tradição e frescor no coração da cidade.</p>
+                                <button className="bg-[#0F3524] text-white px-8 py-2.5 rounded text-sm font-medium hover:bg-green-950 transition-colors shadow-sm cursor-pointer">
+                                    Ver
+                                </button>
                             </div>
                         </div>
-                        {/* Bottom */}
-                        <div className="relative rounded-xl overflow-hidden group cursor-pointer flex-1">
-                            <img 
-                                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" 
-                                alt="Feira da Vila" 
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                            <div className="absolute bottom-0 left-0 p-5">
-                                <h3 className="text-white font-bold mb-1">Feira da Vila</h3>
-                                <p className="text-gray-300 text-xs">Produtos da Região</p>
+
+                        {/* Menores (Direita) */}
+                        <div className="flex flex-col gap-6 h-[400px] md:h-full">
+                            {/* Top */}
+                            <div className="relative rounded-xl overflow-hidden group cursor-pointer flex-1 shadow-md">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=600&q=80" 
+                                    alt="Mercado Central" 
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                                <div className="absolute bottom-0 left-0 p-5">
+                                    <h3 className="text-white font-bold mb-1">Mercado Central</h3>
+                                    <p className="text-gray-300 text-xs">Orgânicos Certificados</p>
+                                </div>
+                            </div>
+                            {/* Bottom */}
+                            <div className="relative rounded-xl overflow-hidden group cursor-pointer flex-1 shadow-md">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" 
+                                    alt="Feira da Vila" 
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                                <div className="absolute bottom-0 left-0 p-5">
+                                    <h3 className="text-white font-bold mb-1">Feira da Vila</h3>
+                                    <p className="text-gray-300 text-xs">Produtos da Região</p>
+                                </div>
                             </div>
                         </div>
                     </div>
