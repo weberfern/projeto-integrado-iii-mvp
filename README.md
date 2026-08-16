@@ -224,15 +224,7 @@ Sua importância no desenvolvimento de sistemas é vital. Uma boa arquitetura im
 **1. Objetivo do Sistema:**
 O objetivo nesta etapa é entregar a versão funcional em código (MVP Web) do Feira Conectada, implementando a interface gráfica validada nas fases anteriores e garantindo uma navegação simples e intuitiva.
 
-**2. Problema que busca resolver:**
-Feiras costumam depender de processos descentralizados e informais para divulgar produtos e organizar o acesso do público. O sistema resolve isso centralizando essas informações num ambiente digital claro, reduzindo a confusão e facilitando a busca por produtores locais.
-
-**3. Público-Alvo:**
-- **Visitantes / Consumidores:** Pessoas que buscam alimentos frescos e desejam encontrar feiras na região do Cariri.
-- **Produtores Rurais:** Agricultores e artesãos que precisam de um canal digital para escoar sua produção.
-- **Gestores (Associações):** Administradores que gerenciam feiras e produtores através do sistema.
-
-**4. Principais Funcionalidades Implementadas no EP3:**
+**2. Principais Funcionalidades Implementadas no EP3:**
 - **Navegação Pública (Home):** Visualização de propostas de valor, categorias de produtos e acesso aos módulos principais.
 - **Autenticação:** Telas responsivas de Login e Cadastro.
 - **Dashboard Administrativo:** Painel de gestão estratégica com simulação de métricas (crescimento de vendas, adesões, tarefas pendentes).
@@ -355,3 +347,33 @@ Abaixo estão as capturas de tela das páginas já desenvolvidas e integradas em
 | <img src="./images/feira-conectada-1-mobile.png" width="250"> | <img src="./images/feira-conectada-2-mobile.png" width="250"> | <img src="./images/feira-conectada-3-mobile.png" width="250"> |
 
 ---
+
+## 🌱 Componente Extensionista: Como utilizar a aplicação
+
+Esta seção foi elaborada para atender aos requisitos do componente extensionista do EP3, demonstrando a compreensão da equipe sobre o funcionamento prático e o impacto da aplicação na sociedade.
+
+**1. Como acessar o sistema**
+Qualquer usuário pode acessar e testar o sistema diretamente pelo navegador (celular ou computador), sem a necessidade de instalar aplicativos, através do link oficial de deploy:
+
+🔗 **[Acessar o Feira Conectada (Vercel)](https://projeto-integrado-iii-mvp.vercel.app/)**
+
+*Alternativamente*, para fins de desenvolvimento ou avaliação de código, o usuário pode acessar o sistema clonando este repositório, instalando as dependências e executando o projeto em seu computador local (conforme detalhado na seção "Instalação e execução").
+
+**2. Como utilizar suas principais funcionalidades**
+- **Explorar como Visitante:** O usuário pode navegar pela página inicial para visualizar as feiras em destaque, pesquisar por localização e explorar categorias de produtos locais (Frutas, Verduras, Laticínios).
+- **Acessar o Painel de Gestão:** Produtores rurais e gestores de feiras podem clicar no botão "Entrar" (acessível no menu), efetuar o login com suas credenciais e serem direcionados para o Dashboard Administrativo. Nele, poderão gerenciar as assembleias, os fornecedores e acompanhar métricas estratégicas.
+
+**3. Qual problema a aplicação busca resolver**
+Feiras tradicionais e comunitárias enfrentam um desafio logístico e de comunicação: a dependência de processos descentralizados e informais (como boca a boca ou redes sociais desorganizadas) para divulgar produtos, horários e locais. O "Feira Conectada" resolve a invisibilidade digital do comércio local e a confusão no acesso às informações, centralizando tudo em um ambiente digital unificado, claro e acessível.
+
+**4. Quem pode se beneficiar da solução (Público-Alvo)**
+- **Pequenos Produtores e Agricultores Familiares:** Ganham um canal de vendas direto e uma vitrine digital confiável, escoando sua produção sem atravessadores.
+- **Visitantes e Consumidores:** Beneficiam-se pela facilidade de encontrar alimentos frescos, sustentáveis e orgânicos, sabendo antecipadamente onde e quando encontrá-los.
+- **Associações e Gestores Comunitários:** Obtêm uma plataforma para organizar os produtores, registrar atas de reuniões e monitorar a saúde da feira através de indicadores.
+
+**5. Exemplos de utilização da aplicação em cenários reais**
+- **Cenário A (O Consumidor Consciente):** Um morador deseja comprar verduras frescas para a semana. Ele acessa a aplicação pelo celular, verifica quais produtores confirmaram presença na "Feira da Glória" neste fim de semana e já sai de casa sabendo onde encontrar as barracas específicas.
+- **Cenário B (O Pequeno Agricultor):** Uma associação de produtores do interior utiliza o painel do sistema para cadastrar os itens colhidos na semana. O gestor entra no Dashboard, cadastra uma nova assembleia sobre o rodízio de barracas e atualiza a lista de feirantes aptos, tudo em um só lugar.
+
+**6. Impacto positivo e contribuição para a sociedade**
+O desenvolvimento do "Feira Conectada" não é apenas a entrega de um software, mas uma ferramenta de inclusão digital. A plataforma gera impacto socioeconômico direto ao fomentar a agricultura familiar e o comércio de proximidade, ajudando a reter a riqueza na própria comunidade. Ao facilitar o acesso a alimentos frescos e fortalecer a identidade cultural e econômica das feiras, a aplicação contribui ativamente para um consumo mais consciente, sustentável e para a valorização contínua do trabalhador rural na sociedade.
