@@ -7,6 +7,10 @@ Professor: Prof. Luís Fabrício de Freitas Souza
 
 ---
 
+**Navegação Rápida:**
+- [Entregável Parcial 1 e 2 (Protótipo e Arquitetura)](#ep2)
+- [Entregável Parcial 3 (Aplicação Web Funcional)](#ep3)
+
 ## 🔗 Continuidade do Projeto e Histórico de Entregas
 
 Este repositório abriga a evolução contínua do projeto "Feira Conectada". Para manter o histórico unificado e facilitar a evolução, o projeto vem sendo construído de forma incremental no mesmo repositório:
@@ -32,6 +36,7 @@ Este repositório abriga a evolução contínua do projeto "Feira Conectada". Pa
 
 ---
 
+<a id="ep2"></a>
 # 📦 Entregável Parcial 1 e 2 (EP1 e EP2) - Protótipo e Arquitetura
 
 > **Aviso:** Toda a documentação presente nesta seção foi estruturada nas Sprints anteriores (EP1 e EP2), referentes ao levantamento de requisitos, elaboração do protótipo de alta fidelidade e definição da arquitetura do software.
@@ -209,6 +214,7 @@ Sua importância no desenvolvimento de sistemas é vital. Uma boa arquitetura im
 
 ---
 
+<a id="ep3"></a>
 # 🚀 Entregável Parcial 3 (EP3) - Aplicação Web Funcional
 
 > **Aviso:** Toda a seção abaixo refere-se exclusivamente às evoluções e códigos implementados durante a Sprint 3 (Entregável Parcial 3), onde o projeto evoluiu de um protótipo estático para uma aplicação funcional.
