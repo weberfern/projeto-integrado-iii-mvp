@@ -224,7 +224,15 @@ Sua importância no desenvolvimento de sistemas é vital. Uma boa arquitetura im
 **1. Objetivo do Sistema:**
 O objetivo nesta etapa é entregar a versão funcional em código (MVP Web) do Feira Conectada, implementando a interface gráfica validada nas fases anteriores e garantindo uma navegação simples e intuitiva.
 
-**2. Principais Funcionalidades Implementadas no EP3:**
+**2. Problema que busca resolver:**
+A aplicação visa resolver a invisibilidade digital e a falta de organização logística das feiras locais, centralizando as informações em um ambiente digital unificado. Isso facilita a busca por produtores rurais e reduz a confusão gerada por processos comunicativos informais. *(Nota: Mais detalhes e cenários práticos podem ser vistos no Componente Extensionista, ao final deste README).*
+
+**3. Público-Alvo:**
+- **Visitantes / Consumidores:** Pessoas que buscam alimentos frescos e informações centralizadas sobre as feiras.
+- **Produtores Rurais:** Agricultores familiares que necessitam de um canal digital para escoar sua produção.
+- **Gestores (Associações):** Administradores que gerenciam as feiras e acompanham o desenvolvimento dos feirantes pelo sistema.
+
+**4. Principais Funcionalidades Implementadas no EP3:**
 - **Navegação Pública (Home):** Visualização de propostas de valor, categorias de produtos e acesso aos módulos principais.
 - **Autenticação:** Telas responsivas de Login e Cadastro.
 - **Dashboard Administrativo:** Painel de gestão estratégica com simulação de métricas (crescimento de vendas, adesões, tarefas pendentes).
