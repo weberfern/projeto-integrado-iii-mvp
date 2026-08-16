@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, ShoppingCart, Truck, Leaf, Star } from 'lucide-react';
+import { ArrowRight, ShoppingCart, Truck, Leaf, Star, Tractor } from 'lucide-react';
 
 export default function Home() {
     return (
@@ -7,13 +7,13 @@ export default function Home() {
             {/* Hero Section */}
             <section className="relative w-full h-[500px] flex items-center">
                 {/* Background Image with Overlay */}
-                <div 
-                    className="absolute inset-0 bg-cover bg-center z-0" 
+                <div
+                    className="absolute inset-0 bg-cover bg-center z-0"
                     style={{ backgroundImage: "url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80')" }}
                 >
                     <div className="absolute inset-0 bg-white/70 sm:bg-white/50 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
                 </div>
-                
+
                 <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12 w-full">
                     <div className="max-w-2xl">
                         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
@@ -50,9 +50,9 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {/* Grande (Esquerda) */}
                         <div className="md:col-span-2 relative rounded-xl overflow-hidden group cursor-pointer h-[300px] md:h-[400px] shadow-md">
-                            <img 
-                                src="https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&w=800&q=80" 
-                                alt="Feira da Glória" 
+                            <img
+                                src="https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&w=800&q=80"
+                                alt="Feira da Glória"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             />
                             <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-white/95 via-white/80 to-transparent"></div>
@@ -70,9 +70,9 @@ export default function Home() {
                         <div className="flex flex-col gap-6 h-auto md:h-[400px]">
                             {/* Top */}
                             <div className="relative rounded-xl overflow-hidden group cursor-pointer h-[200px] md:flex-1 shadow-md">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=600&q=80" 
-                                    alt="Mercado Central" 
+                                <img
+                                    src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=600&q=80"
+                                    alt="Mercado Central"
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -83,9 +83,9 @@ export default function Home() {
                             </div>
                             {/* Bottom */}
                             <div className="relative rounded-xl overflow-hidden group cursor-pointer h-[200px] md:flex-1 shadow-md">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" 
-                                    alt="Feira da Vila" 
+                                <img
+                                    src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80"
+                                    alt="Feira da Vila"
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -126,7 +126,7 @@ export default function Home() {
                         </div>
                         <div className="bg-white p-8 rounded-xl shadow-sm text-center flex flex-col items-center">
                             <div className="w-16 h-16 bg-[#E8F5E9] rounded-full flex items-center justify-center mb-6">
-                                <Leaf className="w-8 h-8 text-feira-green" />
+                                <Tractor className="w-8 h-8 text-feira-green" />
                             </div>
                             <h3 className="font-bold text-lg mb-3">Colheita Direta</h3>
                             <p className="text-gray-500 text-sm">Os produtores preparam seu pedido com o que há de mais fresco no dia.</p>
@@ -168,13 +168,13 @@ export default function Home() {
                     <div className="relative mt-8 md:mt-0">
                         {/* Glow Effect */}
                         <div className="absolute -inset-4 bg-[#D1EEDC] blur-3xl rounded-full z-0 opacity-70"></div>
-                        
-                        <img 
-                            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" 
-                            alt="Plantação" 
+
+                        <img
+                            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80"
+                            alt="Plantação"
                             className="relative z-10 w-full h-[400px] object-cover rounded-xl shadow-xl border-4 border-white"
                         />
-                        
+
                         {/* Rating Card */}
                         <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 md:left-auto md:translate-x-0 md:-right-6 bg-white p-5 rounded-xl shadow-lg z-20 w-[90%] sm:w-64 border border-gray-100">
                             <div className="flex items-center gap-2 mb-2">

@@ -9,10 +9,10 @@ export default function Navbar() {
         <nav className="bg-white border-b border-gray-100 py-3 px-4 md:px-12 sticky top-0 z-50">
             <div className="flex items-center justify-between">
                 <Link to="/" className="flex items-center gap-2">
-                    <Leaf className="w-7 h-7 text-feira-green" />
+                    <img src="/favicon.png" alt="Feira Conectada Logo" className="w-6 h-6 object-contain" />
                     <span className="font-bold text-xl text-feira-green tracking-tight">Feira Conectada</span>
                 </Link>
-                
+
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center gap-10 text-sm font-medium text-gray-500">
                     <Link to="/feiras" onClick={(e) => e.preventDefault()} className="hover:text-feira-green transition-colors">Feiras</Link>
@@ -34,7 +34,7 @@ export default function Navbar() {
                         Entrar
                     </Link>
                     {/* Mobile Menu Button */}
-                    <button 
+                    <button
                         className="md:hidden text-gray-700 hover:text-feira-green cursor-pointer"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >

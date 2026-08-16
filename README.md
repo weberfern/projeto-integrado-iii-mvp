@@ -7,9 +7,15 @@ Professor: Prof. Luís Fabrício de Freitas Souza
 
 ---
 
-## 🔗 Continuidade do Projeto
+## 🔗 Continuidade do Projeto e Histórico de Entregas
 
-Este repositório é a continuidade do projeto de referência desenvolvido no repositório [projeto-integrado-ii-wireframe-sitemap](https://github.com/weberfern/projeto-integrado-ii-wireframe-sitemap). Aqui, o trabalho evolui do wireframe e do sitemap para o protótipo de alta fidelidade do MVP, mantendo a mesma base conceitual e ampliando a documentação visual.
+Este repositório abriga a evolução contínua do projeto "Feira Conectada". Para manter o histórico unificado e facilitar a evolução, o projeto vem sendo construído de forma incremental no mesmo repositório:
+
+- **EP1:** Evolução do wireframe e sitemap para o **protótipo de alta fidelidade**, validando a proposta visual.
+- **EP2:** Elaboração do **modelo arquitetural** do MVP Web.
+- **EP3 (Fase Atual):** Implementação de uma **versão funcional da aplicação** (código real em React/Vite).
+
+*Aviso: Tudo o que se refere ao desenvolvimento em código e aplicação web funcional faz parte da entrega do **Entregável Parcial 3 (EP3)**.*
 
 ---
 
@@ -26,9 +32,15 @@ Este repositório é a continuidade do projeto de referência desenvolvido no re
 
 ---
 
+# 📦 Entregável Parcial 1 e 2 (EP1 e EP2) - Protótipo e Arquitetura
+
+> **Aviso:** Toda a documentação presente nesta seção foi estruturada nas Sprints anteriores (EP1 e EP2), referentes ao levantamento de requisitos, elaboração do protótipo de alta fidelidade e definição da arquitetura do software.
+
 ## 🌐 Visão Geral
 
-O projeto Feira Conectada tem como proposta apoiar a organização, divulgação e acesso às informações de uma feira conectada em ambiente web. Este entregável parcial apresenta o protótipo de alta fidelidade do MVP, desenvolvido no Figma, com foco nas principais telas e fluxos da aplicação.
+O projeto Feira Conectada tem como proposta apoiar a organização, divulgação e acesso às informações de uma feira conectada em ambiente web. 
+
+Atualmente, no **Entregável Parcial 3 (EP3)**, apresentamos a implementação funcional do front-end do MVP. As fases anteriores (EP1 e EP2) estabeleceram a base visual (protótipos) e a base estrutural (arquitetura) para que o sistema chegasse a esta versão executável.
 
 ---
 
@@ -44,7 +56,10 @@ O Feira Conectada busca reduzir esse problema com uma interface clara, organizad
 
 O objetivo do sistema é oferecer uma experiência web simples e intuitiva para apresentar o projeto da feira, apoiar a navegação entre suas principais funcionalidades e servir como base para a evolução incremental do MVP.
 
-Neste EP1, o foco está na construção do protótipo de alta fidelidade, validando a proposta visual e a estrutura de interação antes da implementação final.
+**Evolução dos Objetivos por Entregável:**
+- No **EP1**, o foco esteve na construção do protótipo de alta fidelidade, validando a proposta visual e a estrutura de interação antes da implementação final.
+- No **EP2**, foi elaborado o modelo arquitetural do MVP Web desenvolvido no projeto, orientando as decisões de tecnologia e estrutura.
+- Neste **EP3 (Fase Atual)**, o foco é implementar uma versão funcional da aplicação, trazendo o design e a arquitetura para o código.
 
 ---
 
@@ -191,5 +206,104 @@ Para um negócio real, isso significaria ganhar mais visibilidade, reduzir dúvi
 
 A arquitetura de software é a estrutura fundamental de um sistema. Ela não se resume apenas a escrever código, mas a tomar decisões estratégicas sobre como os diferentes componentes da aplicação vão se organizar, comunicar e funcionar em conjunto. É como a planta baixa de uma casa: antes de construir as paredes, precisamos definir onde passarão os canos e os fios para que tudo suporte o uso diário.
 Sua importância no desenvolvimento de sistemas é vital. Uma boa arquitetura impacta a escalabilidade, permitindo que o projeto "Feira Conectada" suporte um aumento repentino de usuários sem sair do ar. Ela fortalece a segurança, blindando dados sensíveis de produtores e consumidores. Melhora o desempenho, garantindo que as buscas por produtos sejam rápidas. Facilita a manutenção e evolução, pois um código bem estruturado em módulos permite que a equipe adicione novas funcionalidades (como um chat entre produtor e cliente) sem quebrar o que já existe. Em suma, a arquitetura é o pilar que define a qualidade, a vida útil e o sucesso de um projeto de software no mundo real.
+
+---
+
+# 🚀 Entregável Parcial 3 (EP3) - Aplicação Web Funcional
+
+> **Aviso:** Toda a seção abaixo refere-se exclusivamente às evoluções e códigos implementados durante a Sprint 3 (Entregável Parcial 3), onde o projeto evoluiu de um protótipo estático para uma aplicação funcional.
+
+## a) Descrição do projeto
+
+**1. Objetivo do Sistema:**
+O objetivo nesta etapa é entregar a versão funcional em código (MVP Web) do Feira Conectada, implementando a interface gráfica validada nas fases anteriores e garantindo uma navegação simples e intuitiva.
+
+**2. Problema que busca resolver:**
+Feiras costumam depender de processos descentralizados e informais para divulgar produtos e organizar o acesso do público. O sistema resolve isso centralizando essas informações num ambiente digital claro, reduzindo a confusão e facilitando a busca por produtores locais.
+
+**3. Público-Alvo:**
+- **Visitantes / Consumidores:** Pessoas que buscam alimentos frescos e desejam encontrar feiras na região do Cariri.
+- **Produtores Rurais:** Agricultores e artesãos que precisam de um canal digital para escoar sua produção.
+- **Gestores (Associações):** Administradores que gerenciam feiras e produtores através do sistema.
+
+**4. Principais Funcionalidades Implementadas no EP3:**
+- **Navegação Pública (Home):** Visualização de propostas de valor, categorias de produtos e acesso aos módulos principais.
+- **Autenticação:** Telas responsivas de Login e Cadastro.
+- **Dashboard Administrativo:** Painel de gestão estratégica com simulação de métricas (crescimento de vendas, adesões, tarefas pendentes).
+- **Estrutura de Rotas:** Navegação Fluida (SPA) para as telas de "Feiras", "Produtores", "Produtos" e "Mapa".
+
+---
+
+## b) Tecnologias utilizadas
+
+A implementação do EP3 foi feita utilizando as seguintes ferramentas:
+
+- **Linguagem:** `JavaScript (ES6+)`
+  - *Justificativa:* Ampla adoção, suporte nativo aos navegadores e integração indispensável com o ecossistema React.
+- **Framework Front-end:** `React.js` (via `Vite`)
+  - *Justificativa:* O React garante a construção de interfaces através de componentes reutilizáveis (como o Navbar genérico). O Vite foi escolhido como bundler pela extrema velocidade no ambiente de desenvolvimento.
+- **Estilização e UI:** `Tailwind CSS v4` e `Lucide React`
+  - *Justificativa:* Tailwind agiliza o desenvolvimento com classes utilitárias modernas, evitando arquivos CSS gigantes. Lucide traz ícones SVG padronizados, garantindo consistência visual.
+- **Roteamento:** `React Router DOM v7`
+  - *Justificativa:* Ferramenta padrão e mais robusta do mercado para construção de Single Page Applications (SPAs) em React.
+- **Dados:** Mock local (Front-end)
+  - *Justificativa:* O foco do EP3 é validar o fluxo e o front-end. Integrações com banco de dados real ficarão para etapas futuras.
+
+---
+
+## c) Estrutura do projeto
+
+O código-fonte da aplicação React foi organizado modularmente no diretório `src/`:
+
+```text
+📦 feira-conectada-mvp
+ ┣ 📂 public         # Arquivos estáticos servidos diretamente (ex: favicon.png)
+ ┣ 📂 src
+ ┃ ┣ 📂 components   # Componentes reutilizáveis em várias telas (ex: Navbar.jsx)
+ ┃ ┣ 📂 layouts      # Telas de estrutura (ex: MainLayout.jsx com cabeçalho fixo)
+ ┃ ┣ 📂 pages        # Telas que representam páginas completas (Home, Login, Dashboard)
+ ┃ ┣ 📜 App.jsx      # Definição e agrupamento de todas as rotas (React Router)
+ ┃ ┣ 📜 index.css    # Estilos globais e injeção do framework Tailwind v4
+ ┃ ┗ 📜 main.jsx     # Ponto de entrada (Entrypoint) do React no navegador
+ ┣ 📜 package.json   # Dependências do Node (Bibliotecas)
+ ┗ 📜 vite.config.js # Configurações da ferramenta de build (Vite)
+```
+
+---
+
+## d) Instalação e execução
+
+Para que outro desenvolvedor consiga executar o projeto localmente, basta seguir este passo a passo:
+
+**1. Pré-requisitos:**
+- Ter o [Node.js](https://nodejs.org/) (versão 18+) instalado.
+- Ter o Git instalado.
+
+**2. Download e Configuração do Ambiente:**
+No seu terminal, clone o repositório, acesse a pasta da aplicação e instale as dependências:
+
+```bash
+# 1. Clone o projeto (se ainda não tiver feito)
+git clone https://github.com/weberfern/projeto-integrado-iii-mvp.git
+
+# 2. Acesse a pasta do projeto React
+cd "projeto-integrado-iii-mvp/feira-conectada-mvp"
+
+# 3. Instale todas as dependências do package.json
+npm install
+```
+
+**3. Execução da Aplicação:**
+Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+**4. Acesso ao Sistema:**
+- O Vite irá iniciar um servidor local. No terminal aparecerá o link (ex: `http://localhost:5173/`).
+- Abra esse link no seu navegador.
+- Você terá acesso imediato à **Home**. Clicando no botão **"Entrar"**, você visualizará a tela de **Login**.
+- Dentro do Login, basta clicar no botão de "Acessar" (mesmo com os campos vazios) para ser redirecionado e testar a estrutura do **Dashboard**.
 
 ---

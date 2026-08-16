@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { 
-    Leaf, LayoutDashboard, Store, Box, Map as MapIcon, Settings, LogOut, 
+import {
+    Leaf, LayoutDashboard, Store, Box, Map as MapIcon, Settings, LogOut,
     Search, ScanLine, Bell, FileText, Users, MapPin, UsersRound, ArrowRight, Menu, X
 } from 'lucide-react';
 
@@ -20,7 +20,7 @@ export default function Dashboard() {
         <div className="flex h-screen bg-[#F3F6F4] font-sans overflow-hidden">
             {/* Mobile Overlay */}
             {isSidebarOpen && (
-                <div 
+                <div
                     className="fixed inset-0 bg-black/50 z-40 lg:hidden"
                     onClick={() => setIsSidebarOpen(false)}
                 ></div>
@@ -30,14 +30,14 @@ export default function Dashboard() {
             <aside className={`w-64 bg-[#0F3524] text-white flex flex-col fixed inset-y-0 left-0 z-50 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:relative lg:translate-x-0 transition-transform duration-200 ease-in-out`}>
                 <div className="p-6 flex items-center justify-between mb-6">
                     <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
-                        <Leaf className="w-6 h-6 text-[#75E86D]" />
+                        <img src="/favicon.png" alt="Feira Conectada Logo" className="w-6 h-6 object-contain" />
                         <span className="font-bold text-lg tracking-tight">Feira Conectada</span>
                     </div>
                     <button className="lg:hidden text-white hover:text-gray-300" onClick={() => setIsSidebarOpen(false)}>
                         <X className="w-6 h-6" />
                     </button>
                 </div>
-                
+
                 <nav className="flex-1 px-4 space-y-2">
                     <a href="#" onClick={preventDefault} className="flex items-center gap-3 px-4 py-3 bg-[#1A4532] text-white rounded-lg font-medium cursor-pointer">
                         <LayoutDashboard className="w-5 h-5" /> Dashboard
@@ -68,8 +68,8 @@ export default function Dashboard() {
                 {/* Header */}
                 <header className="flex justify-between items-center p-4 lg:p-8 lg:pb-4 gap-4">
                     <div className="hidden lg:block w-[280px]"></div>
-                    
-                    <button 
+
+                    <button
                         className="lg:hidden text-gray-700 hover:text-feira-green cursor-pointer shrink-0"
                         onClick={() => setIsSidebarOpen(true)}
                     >
@@ -78,9 +78,9 @@ export default function Dashboard() {
 
                     <div className="flex-1 max-w-2xl relative mx-auto">
                         <Search className="w-5 h-5 text-gray-400 absolute left-4 top-1/2 transform -translate-y-1/2" />
-                        <input 
-                            type="text" 
-                            placeholder="Pesquisar..." 
+                        <input
+                            type="text"
+                            placeholder="Pesquisar..."
                             className="w-full bg-white rounded-full py-3 pl-12 pr-4 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#75E86D]/50 text-sm"
                         />
                     </div>
@@ -106,7 +106,7 @@ export default function Dashboard() {
                     {/* Left Column */}
                     <div className="flex-1 flex flex-col gap-6">
                         <h1 className="text-2xl font-bold text-[#0F3524]">Gestão Estratégica</h1>
-                        
+
                         {/* 3 Top Cards */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col cursor-pointer hover:shadow-md transition-shadow">
@@ -141,7 +141,7 @@ export default function Dashboard() {
                                     <MapPin className="w-4 h-4 text-feira-green" />
                                 </div>
                                 <p className="text-gray-500 text-xs mb-4">Região Cariri - CE</p>
-                                
+
                                 <div className="space-y-3">
                                     <div className="bg-[#B9E3A5] px-4 py-3 rounded-lg flex justify-between items-center cursor-pointer hover:bg-[#a8d991] transition-colors">
                                         <span className="text-sm font-semibold text-[#0F3524]">Feira do Crato</span>
@@ -160,7 +160,7 @@ export default function Dashboard() {
                                     <h3 className="font-bold text-gray-900 text-sm">Decisões coletivas</h3>
                                     <UsersRound className="w-4 h-4 text-feira-green" />
                                 </div>
-                                
+
                                 <div className="bg-[#8DF285] p-4 rounded-xl mb-3 cursor-pointer hover:opacity-90 transition-opacity">
                                     <h4 className="font-bold text-[#0F3524] text-sm mb-1">Acordos de preço: Tomate Cereja</h4>
                                     <p className="text-[#0F3524] text-xs">Definido valor mínimo de R$ 8,00/kg para o Cariri.</p>
@@ -195,7 +195,7 @@ export default function Dashboard() {
                                         <div className="w-full border-t border-gray-100"></div>
                                         <div className="w-full border-t border-gray-100"></div>
                                     </div>
-                                    
+
                                     {/* Bars */}
                                     {[40, 45, 80, 50, 95, 45, 40, 70, 45, 85, 40, 45].map((val, i) => (
                                         <div key={i} className="w-full max-w-[24px] flex flex-col justify-end items-center h-full relative z-10 group cursor-pointer">
@@ -220,7 +220,7 @@ export default function Dashboard() {
                             <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=400&q=80" alt="Legumes" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 p-6">
-                                <h3 className="text-white font-bold text-lg leading-tight mb-2">Rede<br/>EcoCeará</h3>
+                                <h3 className="text-white font-bold text-lg leading-tight mb-2">Rede<br />EcoCeará</h3>
                                 <p className="text-gray-300 text-xs mb-3 leading-relaxed">Conectando 15 novos produtores de orgânicos da região do Cariri esta semana.</p>
                                 <a href="#" onClick={preventDefault} className="text-[#8DF285] text-xs font-semibold hover:underline flex items-center gap-1 cursor-pointer">
                                     Ver detalhes <ArrowRight className="w-3 h-3" />
@@ -234,8 +234,8 @@ export default function Dashboard() {
                                 <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=400&q=80" alt="Agricultores" className="w-full h-full object-cover" />
                             </div>
                             <div className="bg-[#0F3524] p-6 flex-1 flex flex-col justify-center">
-                                <h3 className="text-white font-bold text-sm mb-4">Escoamento<br/>Direto</h3>
-                                
+                                <h3 className="text-white font-bold text-sm mb-4">Escoamento<br />Direto</h3>
+
                                 <p className="text-gray-300 text-xs mb-2">75% da meta de escoamento atingida</p>
                                 <div className="flex items-center gap-3 mb-4">
                                     <div className="flex-1 h-1.5 bg-gray-600 rounded-full overflow-hidden">
