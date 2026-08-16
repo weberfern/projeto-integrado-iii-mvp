@@ -349,8 +349,9 @@ Abaixo estão as capturas de tela das páginas já desenvolvidas e integradas em
 ![Dashboard Desktop](./images/feira-conectada-3.png)
 
 **Versão Mobile:**
-![Home Mobile](./images/feira-conectada-1-mobile.png)
-![Login Mobile](./images/feira-conectada-2-mobile.png)
-![Dashboard Mobile](./images/feira-conectada-3-mobile.png)
+
+| Home | Login | Dashboard |
+| :---: | :---: | :---: |
+| <img src="./images/feira-conectada-1-mobile.png" width="250"> | <img src="./images/feira-conectada-2-mobile.png" width="250"> | <img src="./images/feira-conectada-3-mobile.png" width="250"> |
 
 ---
