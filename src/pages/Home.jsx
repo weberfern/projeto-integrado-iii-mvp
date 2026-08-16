@@ -35,8 +35,8 @@ export default function Home() {
             </section>
 
             {/* Nossas Feiras */}
-            <section className="w-full relative pt-16 pb-8">
-                <div className="absolute top-0 left-0 w-full h-[65%] bg-[#EAF0EC] z-0"></div>
+            <section className="w-full relative pt-16 pb-24">
+                <div className="absolute top-0 left-0 w-full h-[75%] bg-[#F5F6F5] z-0"></div>
                 <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12">
                     <div className="flex justify-between items-end mb-8">
                         <div>
