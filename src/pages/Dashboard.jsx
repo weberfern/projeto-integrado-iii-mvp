@@ -49,10 +49,10 @@ export default function Dashboard() {
             </aside>
 
             {/* Main Content */}
-            <main className="flex-1 flex flex-col h-screen overflow-y-auto">
+            <main className="flex-1 flex flex-col h-screen overflow-y-auto overflow-x-hidden">
                 {/* Header */}
                 <header className="flex justify-between items-center p-8 pb-4">
-                    <div className="hidden lg:block w-[200px]"></div>
+                    <div className="hidden lg:block w-[280px]"></div>
                     <div className="flex-1 max-w-2xl relative mx-auto">
                         <Search className="w-5 h-5 text-gray-400 absolute left-4 top-1/2 transform -translate-y-1/2" />
                         <input 
@@ -61,7 +61,7 @@ export default function Dashboard() {
                             className="w-full bg-white rounded-full py-3 pl-12 pr-4 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#75E86D]/50 text-sm"
                         />
                     </div>
-                    <div className="flex items-center justify-end gap-5 ml-4 lg:w-[200px]">
+                    <div className="flex items-center justify-end gap-5 ml-4 lg:w-[280px] shrink-0">
                         <button className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:bg-gray-50 text-gray-600 cursor-pointer">
                             <ScanLine className="w-5 h-5" />
                         </button>
