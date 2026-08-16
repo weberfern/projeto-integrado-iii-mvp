@@ -192,7 +192,7 @@ export default function Dashboard() {
                     <div className="w-full xl:w-80 flex flex-col gap-6 mt-14 xl:mt-0">
                         {/* Top Card */}
                         <div className="bg-white rounded-2xl overflow-hidden shadow-sm relative h-64 border border-gray-100 group cursor-pointer">
-                            <img src="https://images.unsplash.com/photo-1595858641158-b64db6e6c986?auto=format&fit=crop&w=400&q=80" alt="Legumes" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=400&q=80" alt="Legumes" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 p-6">
                                 <h3 className="text-white font-bold text-lg leading-tight mb-2">Rede<br/>EcoCeará</h3>

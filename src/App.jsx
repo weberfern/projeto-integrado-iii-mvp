@@ -11,7 +11,7 @@ function App() {
       <Routes>
         {/* Rotas Públicas */}
         <Route path="/" element={
-          <div className="min-h-screen flex flex-col bg-[#FAFAFA] font-sans">
+          <div className="min-h-screen flex flex-col bg-white font-sans">
             <Navbar />
             <Home />
             <Footer />
@@ -19,7 +19,7 @@ function App() {
         } />
 
         <Route path="/login" element={
-          <div className="min-h-screen flex flex-col bg-[#FAFAFA] font-sans">
+          <div className="min-h-screen flex flex-col bg-white font-sans">
             <Navbar />
             <Login />
             <Footer />

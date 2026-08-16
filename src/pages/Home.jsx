@@ -36,7 +36,6 @@ export default function Home() {
 
             {/* Nossas Feiras */}
             <section className="w-full relative pt-16 pb-24">
-                <div className="absolute top-0 left-0 w-full h-[75%] bg-[#F5F6F5] z-0"></div>
                 <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12">
                     <div className="flex justify-between items-end mb-8">
                         <div>
@@ -150,7 +149,7 @@ export default function Home() {
 
                         <div className="flex flex-col gap-6">
                             <div className="flex items-center gap-4">
-                                <img src="https://images.unsplash.com/photo-1595858641158-b64db6e6c986?auto=format&fit=crop&w=100&q=80" alt="Família Oliveira" className="w-12 h-12 rounded-full object-cover" />
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="Família Oliveira" className="w-12 h-12 rounded-full object-cover" />
                                 <div>
                                     <h4 className="font-bold text-gray-900 text-sm">Família Oliveira</h4>
                                     <p className="text-gray-500 text-xs">Especialistas em folhagens hidropônicas</p>
