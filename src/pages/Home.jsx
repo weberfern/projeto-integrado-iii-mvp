@@ -48,9 +48,9 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto md:h-[400px]">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {/* Grande (Esquerda) */}
-                        <div className="md:col-span-2 relative rounded-xl overflow-hidden group cursor-pointer h-[300px] md:h-full shadow-md">
+                        <div className="md:col-span-2 relative rounded-xl overflow-hidden group cursor-pointer h-[300px] md:h-[400px] shadow-md">
                             <img 
                                 src="https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&w=800&q=80" 
                                 alt="Feira da Glória" 
@@ -68,7 +68,7 @@ export default function Home() {
                         </div>
 
                         {/* Menores (Direita) */}
-                        <div className="flex flex-col gap-6 h-[400px] md:h-full">
+                        <div className="flex flex-col gap-6 h-auto md:h-[400px]">
                             {/* Top */}
                             <div className="relative rounded-xl overflow-hidden group cursor-pointer flex-1 shadow-md">
                                 <img 
