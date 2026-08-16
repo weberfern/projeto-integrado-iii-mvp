@@ -1,11 +1,13 @@
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { 
     Leaf, LayoutDashboard, Store, Box, Map as MapIcon, Settings, LogOut, 
-    Search, ScanLine, Bell, FileText, Users, MapPin, UsersRound, ArrowRight 
+    Search, ScanLine, Bell, FileText, Users, MapPin, UsersRound, ArrowRight, Menu, X
 } from 'lucide-react';
 
 export default function Dashboard() {
     const navigate = useNavigate();
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const handleLogout = (e) => {
         e.preventDefault();
@@ -16,11 +18,24 @@ export default function Dashboard() {
 
     return (
         <div className="flex h-screen bg-[#F3F6F4] font-sans overflow-hidden">
+            {/* Mobile Overlay */}
+            {isSidebarOpen && (
+                <div 
+                    className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+                    onClick={() => setIsSidebarOpen(false)}
+                ></div>
+            )}
+
             {/* Sidebar */}
-            <aside className="w-64 bg-[#0F3524] text-white flex flex-col">
-                <div className="p-6 flex items-center gap-2 mb-6 cursor-pointer" onClick={() => navigate('/')}>
-                    <Leaf className="w-6 h-6 text-[#75E86D]" />
-                    <span className="font-bold text-lg tracking-tight">Feira Conectada</span>
+            <aside className={`w-64 bg-[#0F3524] text-white flex flex-col fixed inset-y-0 left-0 z-50 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:relative lg:translate-x-0 transition-transform duration-200 ease-in-out`}>
+                <div className="p-6 flex items-center justify-between mb-6">
+                    <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
+                        <Leaf className="w-6 h-6 text-[#75E86D]" />
+                        <span className="font-bold text-lg tracking-tight">Feira Conectada</span>
+                    </div>
+                    <button className="lg:hidden text-white hover:text-gray-300" onClick={() => setIsSidebarOpen(false)}>
+                        <X className="w-6 h-6" />
+                    </button>
                 </div>
                 
                 <nav className="flex-1 px-4 space-y-2">
@@ -51,8 +66,16 @@ export default function Dashboard() {
             {/* Main Content */}
             <main className="flex-1 flex flex-col h-screen overflow-y-auto overflow-x-hidden">
                 {/* Header */}
-                <header className="flex justify-between items-center p-8 pb-4">
+                <header className="flex justify-between items-center p-4 lg:p-8 lg:pb-4 gap-4">
                     <div className="hidden lg:block w-[280px]"></div>
+                    
+                    <button 
+                        className="lg:hidden text-gray-700 hover:text-feira-green cursor-pointer shrink-0"
+                        onClick={() => setIsSidebarOpen(true)}
+                    >
+                        <Menu className="w-6 h-6" />
+                    </button>
+
                     <div className="flex-1 max-w-2xl relative mx-auto">
                         <Search className="w-5 h-5 text-gray-400 absolute left-4 top-1/2 transform -translate-y-1/2" />
                         <input 
@@ -61,15 +84,15 @@ export default function Dashboard() {
                             className="w-full bg-white rounded-full py-3 pl-12 pr-4 shadow-sm focus:outline-none focus:ring-2 focus:ring-[#75E86D]/50 text-sm"
                         />
                     </div>
-                    <div className="flex items-center justify-end gap-5 ml-4 lg:w-[280px] shrink-0">
-                        <button className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:bg-gray-50 text-gray-600 cursor-pointer">
+                    <div className="flex items-center justify-end gap-3 lg:gap-5 lg:ml-4 lg:w-[280px] shrink-0">
+                        <button className="hidden sm:flex w-10 h-10 bg-white rounded-full items-center justify-center shadow-sm hover:bg-gray-50 text-gray-600 cursor-pointer">
                             <ScanLine className="w-5 h-5" />
                         </button>
                         <button className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:bg-gray-50 text-gray-600 relative cursor-pointer">
                             <Bell className="w-5 h-5" />
                             <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full"></span>
                         </button>
-                        <div className="flex items-center gap-3 ml-2 cursor-pointer">
+                        <div className="flex items-center gap-3 ml-0 lg:ml-2 cursor-pointer">
                             <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="João Silva" className="w-10 h-10 rounded-full" />
                             <div className="hidden md:block">
                                 <p className="text-sm font-bold text-gray-900 leading-tight">João Silva</p>
@@ -79,7 +102,7 @@ export default function Dashboard() {
                     </div>
                 </header>
 
-                <div className="p-8 pt-4 flex flex-col xl:flex-row gap-8">
+                <div className="p-4 lg:p-8 pt-4 flex flex-col xl:flex-row gap-8">
                     {/* Left Column */}
                     <div className="flex-1 flex flex-col gap-6">
                         <h1 className="text-2xl font-bold text-[#0F3524]">Gestão Estratégica</h1>
@@ -149,41 +172,43 @@ export default function Dashboard() {
                         </div>
 
                         {/* Chart Area */}
-                        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex-1 min-h-[250px]">
+                        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex-1 min-h-[250px] overflow-hidden flex flex-col">
                             <div className="flex justify-between items-start mb-6">
                                 <div>
                                     <h3 className="font-bold text-gray-900 text-sm">Desempenho das Feiras</h3>
                                     <p className="text-gray-500 text-xs">Volume de comercialização vs Meta de diversidade</p>
                                 </div>
-                                <div className="flex items-center gap-4 text-xs font-medium text-gray-600">
+                                <div className="hidden sm:flex items-center gap-4 text-xs font-medium text-gray-600">
                                     <div className="flex items-center gap-1"><span className="w-3 h-3 bg-[#3FE135] rounded-sm"></span> Volume</div>
                                     <div className="flex items-center gap-1"><span className="w-3 h-3 bg-black rounded-sm"></span> Meta de diversidade (%)</div>
                                 </div>
                             </div>
 
                             {/* Simple CSS Chart */}
-                            <div className="h-48 w-full flex items-end justify-between px-2 gap-2 relative border-b border-gray-200">
-                                {/* Horizontal grid lines */}
-                                <div className="absolute inset-0 flex flex-col justify-between pointer-events-none">
-                                    <div className="w-full border-t border-gray-100"></div>
-                                    <div className="w-full border-t border-gray-100"></div>
-                                    <div className="w-full border-t border-gray-100"></div>
-                                    <div className="w-full border-t border-gray-100"></div>
-                                    <div className="w-full border-t border-gray-100"></div>
-                                </div>
-                                
-                                {/* Bars */}
-                                {[40, 45, 80, 50, 95, 45, 40, 70, 45, 85, 40, 45].map((val, i) => (
-                                    <div key={i} className="w-full max-w-[24px] flex flex-col justify-end items-center h-full relative z-10 group cursor-pointer">
-                                        <div className="w-full bg-[#3FE135] rounded-t-sm transition-all hover:opacity-80" style={{ height: `${val}%` }}>
-                                            <div className="w-full bg-black rounded-t-sm absolute bottom-0" style={{ height: `${val * 0.6}%` }}></div>
-                                        </div>
+                            <div className="flex-1 w-full overflow-x-auto overflow-y-hidden pb-4">
+                                <div className="h-48 w-full min-w-[400px] flex items-end justify-between px-2 gap-2 relative border-b border-gray-200">
+                                    {/* Horizontal grid lines */}
+                                    <div className="absolute inset-0 flex flex-col justify-between pointer-events-none">
+                                        <div className="w-full border-t border-gray-100"></div>
+                                        <div className="w-full border-t border-gray-100"></div>
+                                        <div className="w-full border-t border-gray-100"></div>
+                                        <div className="w-full border-t border-gray-100"></div>
+                                        <div className="w-full border-t border-gray-100"></div>
                                     </div>
-                                ))}
-                            </div>
-                            <div className="w-full flex justify-between px-2 mt-2 text-[10px] text-gray-400 font-bold">
-                                <span>JAN</span><span>FEV</span><span>MAR</span><span>ABR</span><span>MAI</span><span>JUN</span>
-                                <span>JUL</span><span>AGO</span><span>SET</span><span>OUT</span><span>NOV</span><span>DEZ</span>
+                                    
+                                    {/* Bars */}
+                                    {[40, 45, 80, 50, 95, 45, 40, 70, 45, 85, 40, 45].map((val, i) => (
+                                        <div key={i} className="w-full max-w-[24px] flex flex-col justify-end items-center h-full relative z-10 group cursor-pointer">
+                                            <div className="w-full bg-[#3FE135] rounded-t-sm transition-all hover:opacity-80" style={{ height: `${val}%` }}>
+                                                <div className="w-full bg-black rounded-t-sm absolute bottom-0" style={{ height: `${val * 0.6}%` }}></div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className="w-full min-w-[400px] flex justify-between px-2 mt-2 text-[10px] text-gray-400 font-bold">
+                                    <span>JAN</span><span>FEV</span><span>MAR</span><span>ABR</span><span>MAI</span><span>JUN</span>
+                                    <span>JUL</span><span>AGO</span><span>SET</span><span>OUT</span><span>NOV</span><span>DEZ</span>
+                                </div>
                             </div>
                         </div>
                     </div>

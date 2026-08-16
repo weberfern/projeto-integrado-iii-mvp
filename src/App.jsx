@@ -2,8 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import MainLayout from './layouts/MainLayout';
 
 function App() {
   return (
@@ -11,19 +10,15 @@ function App() {
       <Routes>
         {/* Rotas Públicas */}
         <Route path="/" element={
-          <div className="min-h-screen flex flex-col bg-white font-sans">
-            <Navbar />
+          <MainLayout>
             <Home />
-            <Footer />
-          </div>
+          </MainLayout>
         } />
 
         <Route path="/login" element={
-          <div className="min-h-screen flex flex-col bg-white font-sans">
-            <Navbar />
+          <MainLayout>
             <Login />
-            <Footer />
-          </div>
+          </MainLayout>
         } />
 
         {/* Rota Privada (Dashboard do Feirante) */}

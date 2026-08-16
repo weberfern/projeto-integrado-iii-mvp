@@ -22,11 +22,11 @@ export default function Home() {
                         <p className="text-lg text-gray-700 mb-8">
                             Levamos o frescor dos melhores produtores locais diretamente para sua mesa, com a facilidade e agilidade que o seu dia a dia pede.
                         </p>
-                        <div className="flex flex-wrap gap-4">
-                            <Link to="/feiras" onClick={(e) => e.preventDefault()} className="bg-[#0F3524] text-white px-6 py-3 rounded text-sm font-medium hover:bg-green-950 transition-colors shadow-sm flex items-center gap-2">
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <Link to="/feiras" onClick={(e) => e.preventDefault()} className="w-full sm:w-auto bg-[#0F3524] text-white px-6 py-3 rounded text-sm font-medium hover:bg-green-950 transition-colors shadow-sm flex items-center justify-center gap-2">
                                 Começar Agora <ArrowRight className="w-4 h-4" />
                             </Link>
-                            <Link to="/ofertas" onClick={(e) => e.preventDefault()} className="bg-white text-feira-green border border-feira-green px-6 py-3 rounded text-sm font-medium hover:bg-green-50 transition-colors shadow-sm">
+                            <Link to="/ofertas" onClick={(e) => e.preventDefault()} className="w-full sm:w-auto bg-white text-feira-green border border-feira-green px-6 py-3 rounded text-sm font-medium hover:bg-green-50 transition-colors shadow-sm text-center">
                                 Ver Ofertas
                             </Link>
                         </div>
@@ -69,7 +69,7 @@ export default function Home() {
                         {/* Menores (Direita) */}
                         <div className="flex flex-col gap-6 h-auto md:h-[400px]">
                             {/* Top */}
-                            <div className="relative rounded-xl overflow-hidden group cursor-pointer flex-1 shadow-md">
+                            <div className="relative rounded-xl overflow-hidden group cursor-pointer h-[200px] md:flex-1 shadow-md">
                                 <img 
                                     src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=600&q=80" 
                                     alt="Mercado Central" 
@@ -82,7 +82,7 @@ export default function Home() {
                                 </div>
                             </div>
                             {/* Bottom */}
-                            <div className="relative rounded-xl overflow-hidden group cursor-pointer flex-1 shadow-md">
+                            <div className="relative rounded-xl overflow-hidden group cursor-pointer h-[200px] md:flex-1 shadow-md">
                                 <img 
                                     src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" 
                                     alt="Feira da Vila" 
@@ -176,7 +176,7 @@ export default function Home() {
                         />
                         
                         {/* Rating Card */}
-                        <div className="absolute -bottom-6 right-0 md:-right-6 bg-white p-5 rounded-xl shadow-lg z-20 w-64 border border-gray-100">
+                        <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 md:left-auto md:translate-x-0 md:-right-6 bg-white p-5 rounded-xl shadow-lg z-20 w-[90%] sm:w-64 border border-gray-100">
                             <div className="flex items-center gap-2 mb-2">
                                 <Star className="w-5 h-5 text-feira-green fill-feira-green" />
                                 <span className="font-bold text-gray-900">4.9/5.0</span>
