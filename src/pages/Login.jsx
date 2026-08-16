@@ -36,6 +36,7 @@ export default function Login() {
                         <input
                             type="email"
                             placeholder="seu@email.com"
+                            defaultValue="feirante@feiraconectada.com.br"
                             className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-feira-green/20 focus:border-feira-green transition-all"
                             required
                         />
@@ -53,6 +54,7 @@ export default function Login() {
                         <input
                             type="password"
                             placeholder="********"
+                            defaultValue="feirante123"
                             className="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-feira-green/20 focus:border-feira-green transition-all"
                             required
                         />
@@ -93,15 +95,15 @@ export default function Login() {
             </div>
 
             {/* Thumbnails at bottom */}
-            <div className="relative z-10 flex gap-4 mt-6">
-                <div className="w-36 h-16 rounded-lg overflow-hidden shadow-sm border border-gray-200/50">
+            <div className="relative z-10 flex gap-4 mt-6 w-full max-w-[440px]">
+                <div className="flex-1 h-20 rounded-lg overflow-hidden shadow-sm border border-gray-200/50">
                     <img 
                         src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=300&q=80" 
                         alt="Vegetais Frescos" 
                         className="w-full h-full object-cover"
                     />
                 </div>
-                <div className="w-36 h-16 rounded-lg overflow-hidden shadow-sm border border-gray-200/50">
+                <div className="flex-1 h-20 rounded-lg overflow-hidden shadow-sm border border-gray-200/50">
                     <img 
                         src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=300&q=80" 
                         alt="Plantação" 
