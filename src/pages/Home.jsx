@@ -23,10 +23,10 @@ export default function Home() {
                             Levamos o frescor dos melhores produtores locais diretamente para sua mesa, com a facilidade e agilidade que o seu dia a dia pede.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Link to="/feiras" className="bg-[#0F3524] text-white px-6 py-3 rounded text-sm font-medium hover:bg-green-950 transition-colors shadow-sm flex items-center gap-2">
+                            <Link to="/feiras" onClick={(e) => e.preventDefault()} className="bg-[#0F3524] text-white px-6 py-3 rounded text-sm font-medium hover:bg-green-950 transition-colors shadow-sm flex items-center gap-2">
                                 Começar Agora <ArrowRight className="w-4 h-4" />
                             </Link>
-                            <Link to="/ofertas" className="bg-white text-feira-green border border-feira-green px-6 py-3 rounded text-sm font-medium hover:bg-green-50 transition-colors shadow-sm">
+                            <Link to="/ofertas" onClick={(e) => e.preventDefault()} className="bg-white text-feira-green border border-feira-green px-6 py-3 rounded text-sm font-medium hover:bg-green-50 transition-colors shadow-sm">
                                 Ver Ofertas
                             </Link>
                         </div>
@@ -41,7 +41,7 @@ export default function Home() {
                         <h2 className="text-2xl font-bold text-gray-900 mb-2">Nossas Feiras</h2>
                         <p className="text-gray-600">Explore os mercados mais próximos de você.</p>
                     </div>
-                    <Link to="/feiras" className="text-feira-green text-sm font-medium hover:underline hidden sm:flex items-center gap-1">
+                    <Link to="/feiras" onClick={(e) => e.preventDefault()} className="text-feira-green text-sm font-medium hover:underline hidden sm:flex items-center gap-1">
                         Ver todas as feiras <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>

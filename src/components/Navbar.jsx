@@ -10,10 +10,10 @@ export default function Navbar() {
             </Link>
             
             <div className="hidden md:flex items-center gap-10 text-sm font-medium text-gray-500">
-                <Link to="/feiras" className="hover:text-feira-green transition-colors">Feiras</Link>
-                <Link to="/produtos" className="hover:text-feira-green transition-colors">Produtos</Link>
-                <Link to="/produtores" className="hover:text-feira-green transition-colors">Produtores</Link>
-                <Link to="/mapa" className="hover:text-feira-green transition-colors">Mapa</Link>
+                <Link to="/feiras" onClick={(e) => e.preventDefault()} className="hover:text-feira-green transition-colors">Feiras</Link>
+                <Link to="/produtos" onClick={(e) => e.preventDefault()} className="hover:text-feira-green transition-colors">Produtos</Link>
+                <Link to="/produtores" onClick={(e) => e.preventDefault()} className="hover:text-feira-green transition-colors">Produtores</Link>
+                <Link to="/mapa" onClick={(e) => e.preventDefault()} className="hover:text-feira-green transition-colors">Mapa</Link>
             </div>
 
             <div className="flex items-center gap-6">
